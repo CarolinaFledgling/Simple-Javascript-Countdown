@@ -1,6 +1,6 @@
 const countdown = () => {
 
-    const countDate = new Date('May 20, 2021 00:00:00').getTime()
+    const countDate = new Date('May 20, 2022 00:00:00').getTime()
     console.log(countDate)
 
     // Current time
