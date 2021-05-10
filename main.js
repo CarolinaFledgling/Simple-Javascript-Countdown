@@ -32,3 +32,22 @@ const countdown = () => {
 }
 
 setInterval(countdown, 1000)
+
+
+// Dark Mode
+
+const checkbox = document.getElementById('checkbox-dark')
+const navLinks = document.querySelectorAll('.nav__link')
+const btnForm = document.querySelector('.btn-form ')
+
+
+checkbox.addEventListener('change', () => {
+    document.body.classList.toggle('dark')
+
+    navLinks.forEach(function (li) {
+        li.classList.toggle('darkLetters')
+    })
+})
+
+
+

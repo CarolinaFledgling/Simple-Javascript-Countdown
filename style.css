@@ -8,6 +8,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  padding: 20px;
 }
 
 .img-calender {
@@ -51,4 +52,69 @@ h2 {
   background-color: #e54c42;
   padding: 0.4rem;
   border-radius: 10px;
+}
+
+/* DARK MODE  */
+.label-dark {
+  width: 50px;
+  height: 26px;
+  background-color: #111;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+}
+
+.ball {
+  background-color: #fff;
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox-dark {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-dark:checked + .label-dark .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: #fff;
+}
+.fa-sun {
+  color: #fec107;
+}
+
+body.dark {
+  background: #292c35;
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+  .img-calender {
+    height: 30vh;
+  }
+
+  .day,
+  .hour,
+  .minute,
+  .second {
+    font-size: 1rem;
+  }
+
+  .time-style {
+    font-size: 0.9rem;
+  }
 }
