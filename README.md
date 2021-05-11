@@ -5,6 +5,7 @@
 It's a training project,
 It is made with HTML, CSS, and pure JavaScript.
 Basic Clock: Count down to a Specific Date and Time.
+DARK MODE button.
 
 ## Here’s a quick outline of the steps involved in creating a basic clock:
 
